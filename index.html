@@ -5,20 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Search</title>
-
     <link rel="stylesheet" href="style.css">
-      
 </head>
-<a href="#" class="advanced-search-btn"><button type="button">Advanced Search</button></a>
-<a href="#" class="image-search-btn"><button type="button">Image Search</button></a>
-<div class="search-wrapper">
-    <div id="form-container">
-    <form action="https://www.google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
-         </div>
+<body>
+    <a href="advancesearch.html" class="advanced-search-btn"><button type="button">Advanced Search</button></a>
+    <a href="imagesearch.html" class="image-search-btn"><button type="button">Image Search</button></a>
+    <div id="logo">
+        <img src="logo.png">
+    </div>
 
-</div>
+    <div class="search-wrapper">
+        <div id="form-container">
+            <form action="https://www.google.com/search">
+                <input type="text" name="q">
+                <input type="submit" value="Google Search">
+            </form>
+            <form action="https://www.google.com/search" method="GET">
+                <input type="hidden" name="q" value="">
+                <input type="hidden" name="btnI" value="I'm Feeling Lucky">
+                <input  style="background-color: #fff; width: 300px; position:fixed;right: 400px;" value="I'm Feeling Lucky" type="submit">
+                <input name="sca_esv" value="913d894b4ad63b06" type="hidden">
+                <input name="source" type="hidden" value="hp">
+            </form>
+        </div>
+    </div>
+    
 </body>
 </html>
